@@ -11,7 +11,8 @@ calcular.addEventListener('click', function() {
         tabuada.innerHTML = ""
         for(let i = 1; i <= 10; i++) {
             tabuada.style.color = 'blue'
-            let calc = `${i} x ${numberValue} = ${numberValue*i}`
+            let cont = numberValue * i
+            let calc = `${i} x ${numberValue} = ${cont.toFixed(2)}`
             let resultado = document.createElement('p')
             resultado.innerHTML = calc
             tabuada.appendChild(resultado)
@@ -29,7 +30,8 @@ number.addEventListener('keypress', function(e) {
             tabuada.innerHTML = ""
             for(let i = 1; i <= 10; i++) {
                 tabuada.style.color = 'blue'
-                let calc = `${i} x ${numberValue} = ${numberValue*i}`
+                let cont = numberValue * i
+                let calc = `${i} x ${numberValue} = ${cont.toFixed(2)}`
                 let resultado = document.createElement('p')
                 resultado.innerHTML = calc
                 tabuada.appendChild(resultado)

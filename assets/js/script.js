@@ -4,9 +4,9 @@ let calcular = document.querySelector('#calcular')
 
 calcular.addEventListener('click', function() {
     const numberValue = Number(number.value)
-    if(numberValue < 1) {
+    if(numberValue < 1 || numberValue > 20000) {
         tabuada.style.color = 'red'
-        tabuada.innerHTML = "ERRO: Não insira um número menor igual a 0 ou preencha o campo!"
+        tabuada.innerHTML = "ERRO: Insira um número em um intervalo de 1 a 20,000 ou preencha o campo"
     } else {
         tabuada.innerHTML = ""
         for(let i = 1; i <= 10; i++) {
